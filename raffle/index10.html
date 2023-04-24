@@ -1,0 +1,34 @@
+<html>
+	<title>Raffle Drawing</title>
+	<head>
+		<script src = "main10.js"></script>
+		<link rel = "stylesheet" href = "main.css">
+		<link rel = "icon" href = "favicon.png">
+	</head>
+	<body><br>
+		<section id = "background-style">
+		<h1>Enter Contestant Name:</h1>
+		<div>Contestant: <input type="text" id="opt1" onInput = "getInfo()"></div>
+		<div>Contestant: <input type="text" id="opt2" onInput = "getInfo()"></div>
+		<div>Contestant: <input type="text" id="opt3" onInput = "getInfo()"/></div>
+		<div>Contestant: <input type="text" id="opt4" onInput = "getInfo()"/></div>
+		<div>Contestant: <input type="text" id="opt5" onInput = "getInfo()"/></div>
+		<div>Contestant: <input type="text" id="opt6" onInput = "getInfo()"/></div>
+		<div>Contestant: <input type="text" id="opt7" onInput = "getInfo()"/></div>
+		<div>Contestant: <input type="text" id="opt8" onInput = "getInfo()"/></div>
+		<div>Contestant: <input type="text" id="opt9" onInput = "getInfo()"/></div>
+		<div>Contestant: <input type="text" id="opt10" onInput = "getInfo()"/></div>
+		<input type = "button" id = "the_button" value = "Choose Winner" onClick = "theTimer()">
+		<input type = "button" id = "the_button2" value = "Clear Entries" onClick = "refreshPage()">
+		<table>
+		<tr>
+		<td>
+		<div id = "result_return">The winner is</div>
+		</td><td>
+		<div id = "result_r">...</div>
+		</td>
+		</tr>
+		</table>
+		</section>
+	</body>
+</html>

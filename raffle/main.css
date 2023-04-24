@@ -1,0 +1,88 @@
+html
+{
+	overflow-y: scroll;
+	font-family: arial;
+	background-color: #F6F6FA;
+}
+*
+{
+	margin: 0px;
+	padding: 0px;
+	user-select: none;
+}
+#background-style
+{
+	background-color: #F9846B;
+	width: 275px;
+	margin: auto;
+	border-radius: 10px;
+	padding: 0px 7px 7px 7px;
+	box-shadow: 0px 2px 6px rgba(0, 0, 0, .36);
+}
+h1
+{
+	text-align: center;
+	font-family: Britannic;
+	-webkit-text-stroke: 1px red;
+	color: #FFFFFF; 
+}
+[id*= opt]
+{
+	background-color: #F9B3A4;
+	border-radius: 2px;
+	border: 1px ridge #EE5434;
+	height: 24px;
+}
+[id *= button]
+{
+	padding: 5px;
+	margin-top: 7px;
+	background-color: #E0330F;
+	border: none;
+	border-radius: 5px;
+	color: #FFFFFF;
+	cursor: pointer;
+}
+[id *= button]:hover
+{
+	background-color: #EEA696;
+	color: #000000;
+}
+#the_button2
+{
+	float: right;
+}
+[id *= result]
+{
+	padding-top: 7px;
+}
+@keyframes blink {50% { color: transparent }}
+.loader__dot { animation: 1s blink infinite }
+.loader__dot:nth-child(2) { animation-delay: 125ms }
+.loader__dot:nth-child(3) { animation-delay: 250ms }
+@media only screen and (max-width: 960px)
+{
+	#background-style
+	{
+		width: 80%;
+		font-size: 36px;
+	}	
+	[id*= opt]
+	{
+		width:70%;
+		height: 36px;
+		font-size: 32px;
+	}
+	[id *= button]
+	{
+		padding: 10px;
+		margin-top: 15px;
+		font-size: 36px;
+		border-radius: 15px;
+	}
+	[id *= result]
+	{
+		padding-top: 15px;
+		font-size: 36px;
+	}
+}
